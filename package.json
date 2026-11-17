@@ -1,0 +1,38 @@
+{
+  "name": "glyph-quest",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@expo-google-fonts/dm-mono": "^0.4.2",
+    "@expo-google-fonts/press-start-2p": "^0.4.1",
+    "@expo-google-fonts/silkscreen": "^0.4.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@shopify/react-native-skia": "2.14.0",
+    "expo": "~58.0.25",
+    "expo-audio": "~58.0.12",
+    "expo-font": "~58.0.12",
+    "expo-haptics": "~58.0.8",
+    "expo-keep-awake": "~58.0.4",
+    "expo-linear-gradient": "~58.0.4",
+    "expo-splash-screen": "~58.0.14",
+    "expo-status-bar": "~58.0.5",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.11.1"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "android:go": "expo start --android",
+    "typecheck": "tsc --noEmit",
+    "build:apk": "eas build -p android --profile preview",
+    "build:aab": "eas build -p android --profile production",
+    "sfx": "python3 scripts/generate-sfx.py"
+  },
+  "private": true,
+  "description": "Glyph Quest \u2014 a pocket-sized 10-chamber pixel adventure, as a native Android app (Expo + React Native + Skia)."
+}
